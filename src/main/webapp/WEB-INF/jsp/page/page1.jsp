@@ -6,14 +6,10 @@
 	<meta http-equiv="Cache-Control" content="no-siteapp" />
 	<meta name="viewport" content="width = device-width,inital-scale = 1.0,user-scalable = no" />
 	<meta name="renderer" content="webkit"/>
-	<script type="text/javascript" src="${pageContext.request.contextPath}/webjars/jquery/2.1.4/jquery.js"></script>
-	<script src="${pageContext.request.contextPath}/webjars/tether/1.4.0/js/tether.min.js"></script>
-	<script src="${pageContext.request.contextPath}/webjars/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-	<link href="${pageContext.request.contextPath}/webjars/bootstrap/4.0.0-alpha.6/css/bootstrap.css" rel = "stylesheet">
-	<link href="${pageContext.request.contextPath}/webjars/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
 
-	
-	
+  	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	
 	<style type="text/css">
 		.col-md-4{
@@ -61,12 +57,13 @@
 			opacity:.8;
 		}
 		
+		
 	</style>
 <title>Spring Boot Sample</title>
 </head>
 
 <body>	
-	<nav class="navbar navbar-default" role="navigation">
+	<nav class="navbar navbar-inverse" role="navigation">
 	<div class="container-fluid">
     <div class="navbar-header">
         <a class="navbar-brand" href="#">菜鸟教程</a>
