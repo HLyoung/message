@@ -39,5 +39,10 @@ public class jspController{
 		return "page/page2";
 	}
 	
+	@RequestMapping("/htmlHello")
+	public String html1(Model model){
+		return "hello";
+	}
+	
 }
 

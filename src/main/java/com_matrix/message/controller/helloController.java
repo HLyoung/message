@@ -7,17 +7,28 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com_matrix.message.entity.user;
+import com_matrix.message.service.userService;
 
 @RestController
 @RequestMapping("/hello")
 public class helloController {
 
+	private final static Logger logger = LoggerFactory.getLogger(helloController.class);
+	
+	@Autowired
+	private userService userservice;
     @RequestMapping
     public String hello() {
-        return "Hello Spring-Boot";
+        return "hello from springboot";
     }
 
     @RequestMapping("/info")
@@ -37,5 +48,11 @@ public class helloController {
             list.add(map);
         }
         return list;
+    }
+    
+    @RequestMapping("/user")
+    public List<user> listUser(){
+    	logger.info("读取用户信息");
+    	return userservice.getList();
     }
 }
