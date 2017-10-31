@@ -28,7 +28,6 @@ public class jspController{
 	@RequestMapping("/page1")
 	public ModelAndView page1(){
 		ModelAndView mv = new ModelAndView("page/page1");
-		mv.addObject("content",hello);
 		return mv;
 	}
 	
@@ -39,9 +38,9 @@ public class jspController{
 		return "page/page2";
 	}
 	
-	@RequestMapping("/htmlHello")
-	public String html1(Model model){
-		return "hello";
+	@RequestMapping("/register")
+	public String register(Model model){
+		return "page/register";
 	}
 	
 }

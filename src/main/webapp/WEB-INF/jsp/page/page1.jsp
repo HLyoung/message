@@ -12,14 +12,6 @@
 	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	
 	<style type="text/css">
-		.col-md-4{
-			color:red;
-			float:left;
-		}
-		.col-md-8{
-			color:blue;
-			float:left;
-		}
 		.p{
 			display:block;
 			mergin-top:1em;
@@ -32,11 +24,25 @@
 			min-with:1000px;
 			zoom:1;
 		}
-		.productionBanner{
-			height:520px;
-			color:0xfff;
-			background:url(banner1.jpg) no-repeat top fixed;
-			/*background-size:100% auto;*/
+		@media screen and (min-width:1000px){
+			.productionBanner{
+				height:400px;
+				color:0xfff;
+				background:url(banner2.jpg) no-repeat top fixed;
+				background-size:100% auto;
+			}
+		}
+		@media screen and (min-width:600px) and (max-width:1000){
+			.productionBanner{
+				heigth:520px;
+				clolor:0xfff;
+				backgroud:url(banner1.jpg) no-repeat top fixed;
+				backgroud-size:100% auto;
+			}
+		}
+		@media screen and (max-width:600px){
+			.productionBanner{
+			}
 		}
 		.info{
 			color:#fff;
@@ -59,6 +65,55 @@
 		.navbar-nav{
 			float:right;
 		}
+		.navbar{
+			margin-bottom:0px;
+		}
+		.tobeMember{
+			height:34px;
+			font-size:20px;
+			cursor:pointer;
+			margin-left:20px;
+			border-radius:2px;
+			transition:background-color .25s ease-out,color .25s ease-out,border-color .25s ease-out;
+		}
+		
+		.m-section{
+			padding:60px;
+			background-color:#fff;
+			color:#333;
+			text-align:center;
+		}
+		
+		.title{
+			font-size:34px;
+			line-height:34px;
+			color:#333;
+		}
+		.blocks{
+			max-width:1200px;
+			heigth:270px;
+			margin:auto;
+			zoom:1;
+		}
+		.block3s{
+			float:left;
+			width:33.3%;
+			opacity:1;
+		}
+		.block2s{
+			float:left;
+			width:50%;
+			opacity:1;
+		}
+		.icon{
+			margin-top:54px;
+			height:112px;
+			line-height:112px;
+		}
+		.icon-accuracy{
+			background:url(accuracy.jpg) no-repeat;
+			background-size:102px 101px;
+		}
 		
 		
 	</style>
@@ -66,7 +121,7 @@
 </head>
 
 <body>	
-	<nav class="navbar navbar-inverse" role="navigation">
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
     <div class="navbar-header">
         <a class="navbar-brand" href="#">短信平台</a>
@@ -77,11 +132,14 @@
             <li><a href="#">解决方案</a></li>
             <li><a href="#">案例</a></li>
             <li><a href="#">价格</a></li>
+            <li><a href="#" class = "tobeMember btn-login">登陆</a></li>
+            <li><a target="_blank" href="register" class = "active tobeMember btn-register">注册</a></li>
             
+    
         </ul>
     </div>
 	</div>
-	</nav>
+	</nav>	
 	<div class = "production">
 		<div class="productionBanner">
 			<div class = "info">
@@ -91,6 +149,53 @@
 			</div>
 		</div>
 	</div>
-    <h1>${content }</h1>
+	
+	<section class = "section sec-introduce">
+		<div class = "m-section div-introduce">
+			<h2 class = "title">消息必达&nbsp;&nbsp;&nbsp;&nbsp;智能分析&nbsp;&nbsp;&nbsp;&nbsp;海量并发</h2>
+			<ul class = "blocks">
+				<li style = "list-style-type:none;" class = "block3s block3s1">
+					<div class = "icon icon-accuracy">
+						<i></i>
+					</div>
+					<div><h3>消息到达率99.9%</h3></div>
+				</li>
+				<li style = "list-style-type:none;" class = "block3s block3s2">
+					<div class = "icon icon-telnet">
+					
+					</div>
+					<div><h3>呈现智能分析结果</h3></div>
+				</li>
+				<li style = "list-style-type:none;" class = "block3s block3s3">
+					<div class = "icon icon-lot">
+					
+					</div>
+					<div><h3>多并发</h3></div>
+				</li>
+			</ul>
+			
+		</div>
+	</section>
+	
+	<section class = "section sec-price">
+		<div class = "m-section div-price">
+			<h2 class = "title">价格&nbsp;&nbsp;&nbsp;&nbsp;资源包</h2>
+			<ul class = "blocks">
+				<li style = "list-style-type:none;" class = "block2s block2s1">
+					<div class = "icon icon-price">
+					
+					</div>
+					<div><h3>价格优惠</h3></div>
+				</li>
+				<li style = "list-style-type:none;" class = "block2s block2s2">
+					<div class = "icon resource">
+					
+					</div>
+					<div><h3>可选资源包</h3></div> 
+				</li>
+			</ul>
+		</div>
+	</section>
+	
 </body>
 </html>
