@@ -25,13 +25,13 @@ public class userService {
     private JdbcTemplate jdbcTemplate;
 
     public List<user> getList(){
-        String sql = "SELECT userName,password  FROM user";
+        String sql = "SELECT name,password  FROM user";
         return (List<user>) jdbcTemplate.query(sql, new RowMapper<user>(){
 
             @Override
             public user mapRow(ResultSet rs, int rowNum) throws SQLException {
                 user stu = new user();
-                stu.setName(rs.getString("userName"));
+                stu.setName(rs.getString("name"));
                 stu.setPassword(rs.getString("password"));
                 return stu;
             }
