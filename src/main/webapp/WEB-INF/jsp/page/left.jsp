@@ -1,8 +1,10 @@
 
+
+<%@ page language="java" pageEncoding="UTF-8"%>
+<!DOCTYPE HTML>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <link  rel="stylesheet" type="text/css" href="stylesheets/left.css">
+        <link  rel="stylesheet" type="text/css" href="../../stylesheet/left.css">
         <script src="http://code.jquery.com/jquery-latest.js"></script>
 
         <script type="text/javascript">
@@ -29,12 +31,12 @@
                     <div class = "my-message-base my-message-left">
                         <ul class="m-menu">
                             <li class="j-index-0 j-message-menu">
-                                <a href="#">用户中心</a>
+                              <a href = "#">用户中心</a>
                             </li>
                             <li class="j-index-1 j-message-menu">
                                 <a href="#">
                                     <i class="u-icon u-icon-info"></i>
-                                    <span class="basic">基本信息</span>
+                                    <span class="basic">用户信息</span>
                                 </a>
                             </li>
                             <li class="j-index-2 j-message-menu">
@@ -46,7 +48,7 @@
                             <li class="j-index-3 j-message-menu">
                                 <a href="#">
                                     <i class="u-icon u-icon-auth"></i>
-                                    <span class="auth">认证信息</span>
+                                    <span class="auth">授权信息</span>
                                 </a>
                             </li>
                             <li class="j-index-4 j-message-menu">
