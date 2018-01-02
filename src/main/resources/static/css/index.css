@@ -1,4 +1,4 @@
-.p{
+		.p{
 			display:block;
 			mergin-top:1em;
 			mergin-buttom:1em;
@@ -14,7 +14,7 @@
 			.productionBanner{
 				height:400px;
 				color:0xfff;
-				background:url(banner2.jpg) no-repeat top fixed;
+				background:url(/imag/banner2.jpg) no-repeat top fixed;
 				background-size:100% auto;
 			}
 		}
@@ -22,7 +22,7 @@
 			.productionBanner{
 				heigth:520px;
 				clolor:0xfff;
-				backgroud:url(banner1.jpg) no-repeat top fixed;
+				backgroud:url(/imag/banner1.jpg) no-repeat top fixed;
 				backgroud-size:100% auto;
 			}
 		}
@@ -97,6 +97,6 @@
 			line-height:112px;
 		}
 		.icon-accuracy{
-			background:url(accuracy.jpg) no-repeat;
+			background:url(/imag/accuracy.jpg) no-repeat;
 			background-size:102px 101px;
 		}

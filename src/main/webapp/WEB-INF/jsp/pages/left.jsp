@@ -4,7 +4,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <link  rel="stylesheet" type="text/css" href="../../stylesheet/left.css">
+        <link  rel="stylesheet" type="text/css" href="/css/left.css">
         <script src="http://code.jquery.com/jquery-latest.js"></script>
 
         <script type="text/javascript">
@@ -14,8 +14,9 @@
                    $('.j-message-menu').find('.u-icon').css('background-positionX','-110px');
                    $(this).css('background','#1d2b40');
                    $(this).find('.u-icon').css('background-positionX','-88px');
-               });
-           });
+                  
+               });   
+           });     
         </script>
     </head>
     <style type="text/css">
@@ -24,6 +25,7 @@
         }
     </style>
     <body>
+    	
         <div class="g-doc">
             <div id = "head" style = "height: 64px"> head </div>
             <div id = "left" class = "g-left" style = "left:0; display: inline-block">
