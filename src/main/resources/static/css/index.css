@@ -62,8 +62,12 @@
 			border-radius:2px;
 			transition:background-color .25s ease-out,color .25s ease-out,border-color .25s ease-out;
 		}
-		
+		.section{
+			display:block;
+			position:ralative;
+		}
 		.m-section{
+			display:block;
 			padding:60px;
 			background-color:#fff;
 			color:#333;
@@ -83,7 +87,7 @@
 		}
 		.block3s{
 			float:left;
-			width:33.3%;
+			width:25%;
 			opacity:1;
 		}
 		.block2s{
@@ -97,6 +101,18 @@
 			line-height:112px;
 		}
 		.icon-accuracy{
-			background:url(/imag/accuracy.jpg) no-repeat;
-			background-size:102px 101px;
+			background:url(/imag/101.jpg) no-repeat;
+			background-size:300px 200px;
 		}
+		.div-introduce{
+			margin-top:20px;
+			height:500px;
+		}
+		.div-advantage{
+			margin-top:20px;
+			height: 500px;
+		}
+		
+		.div-price{
+			margin-top: 100px;
+	    }
