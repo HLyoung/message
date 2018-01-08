@@ -1,4 +1,4 @@
-.p{
+		.p{
 			display:block;
 			mergin-top:1em;
 			mergin-buttom:1em;
@@ -14,7 +14,7 @@
 			.productionBanner{
 				height:400px;
 				color:0xfff;
-				background:url(banner2.jpg) no-repeat top fixed;
+				background:url(/imag/banner2.jpg) no-repeat top fixed;
 				background-size:100% auto;
 			}
 		}
@@ -22,7 +22,7 @@
 			.productionBanner{
 				heigth:520px;
 				clolor:0xfff;
-				backgroud:url(banner1.jpg) no-repeat top fixed;
+				backgroud:url(/imag/banner1.jpg) no-repeat top fixed;
 				backgroud-size:100% auto;
 			}
 		}
@@ -62,8 +62,12 @@
 			border-radius:2px;
 			transition:background-color .25s ease-out,color .25s ease-out,border-color .25s ease-out;
 		}
-		
+		.section{
+			display:block;
+			position:ralative;
+		}
 		.m-section{
+			display:block;
 			padding:60px;
 			background-color:#fff;
 			color:#333;
@@ -83,7 +87,7 @@
 		}
 		.block3s{
 			float:left;
-			width:33.3%;
+			width:25%;
 			opacity:1;
 		}
 		.block2s{
@@ -97,6 +101,18 @@
 			line-height:112px;
 		}
 		.icon-accuracy{
-			background:url(accuracy.jpg) no-repeat;
-			background-size:102px 101px;
+			background:url(/imag/101.jpg) no-repeat;
+			background-size:300px 200px;
 		}
+		.div-introduce{
+			margin-top:20px;
+			height:500px;
+		}
+		.div-advantage{
+			margin-top:20px;
+			height: 500px;
+		}
+		
+		.div-price{
+			margin-top: 100px;
+	    }

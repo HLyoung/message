@@ -8,7 +8,7 @@
 	<meta name="renderer" content="webkit"/>
 
   	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="../stylesheet/index.css" type="text/css">
+  	<link rel="stylesheet" href="/css/index.css" type="text/css">
 	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	
@@ -18,7 +18,7 @@
 <title>Spring Boot Sample</title>
 </head>
 
-<body>	
+<body style="overflow:scroll">	
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
     <div class="navbar-header">
@@ -49,24 +49,36 @@
 	</div>
 	
 	<section class = "section sec-introduce">
-		<div class = "m-section div-introduce">
-			<h2 class = "title">消息必达&nbsp;&nbsp;&nbsp;&nbsp;智能分析&nbsp;&nbsp;&nbsp;&nbsp;海量并发</h2>
+		<div class = "m-section div -introduce">
+			<h1 class="title">产品介绍</h1>
+			
+		</div>
+	</section>
+	<section class = "section sec-advantage">
+		<div class = "m-section div-advantage">
+			<h1 class = "title">产品优势</h1>
 			<ul class = "blocks">
+			    <li style = "list-style-type:none;" class = "block3s block3s0">
+			    	<div class = "icon icon-all">
+			    		<i></i>
+			    	</div>
+			    	<div><h3>全网覆盖</h3></div>
+			    </li>
 				<li style = "list-style-type:none;" class = "block3s block3s1">
 					<div class = "icon icon-accuracy">
 						<i></i>
 					</div>
-					<div><h3>消息到达率99.9%</h3></div>
+					<div ><h3>消息到达率99.9%</h3></div>
 				</li>
 				<li style = "list-style-type:none;" class = "block3s block3s2">
 					<div class = "icon icon-telnet">
-					
+						<i></i>
 					</div>
 					<div><h3>呈现智能分析结果</h3></div>
 				</li>
 				<li style = "list-style-type:none;" class = "block3s block3s3">
 					<div class = "icon icon-lot">
-					
+						<i></i>
 					</div>
 					<div><h3>多并发</h3></div>
 				</li>
@@ -81,13 +93,13 @@
 			<ul class = "blocks">
 				<li style = "list-style-type:none;" class = "block2s block2s1">
 					<div class = "icon icon-price">
-					
+						<i></i>
 					</div>
 					<div><h3>价格优惠</h3></div>
 				</li>
 				<li style = "list-style-type:none;" class = "block2s block2s2">
 					<div class = "icon resource">
-					
+						<i></i>
 					</div>
 					<div><h3>可选资源包</h3></div> 
 				</li>
