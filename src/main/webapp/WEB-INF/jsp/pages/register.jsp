@@ -37,7 +37,13 @@
 	    			<span class = "register-img mail-img"></span>
 	    			<a class = "mail-regjster-title" href = "javascript:;">邮箱注册</a>
 	    		</div>
-	    	</div>
+			</div>
+			
+			<div class = "sub-form">
+				<form action>
+					
+				</form>
+			</div>
 	    </div>
 	</body>
 	
