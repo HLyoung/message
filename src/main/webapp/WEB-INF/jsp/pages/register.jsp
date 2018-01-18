@@ -30,7 +30,7 @@
 					all_tang.appendChild(u_label);
 
 					var label = document.createElement("label");
-					lable.setAttribute("form", "");
+					label.setAttribute("form", "");
 					label.innerHTML = head;
 					u_label.appendChild(label);
 
@@ -48,7 +48,7 @@
 			}
 			function click_regPhone() {
 				var form = document.getElementById("regForm");
-				form.removeChild();
+			//	form.removeChild();
 				add_line("邮箱地址","请输入邮箱地址","regForm","id_mail");
 				add_line("设置密码","请输入密码","id_mail","id_password_in_mail");
 				add_line("确认密码","请再次输入密码","id_password_in_mail","id_passwordAgain_in_mail");
@@ -69,13 +69,13 @@
 					line.appendChild(reg_btn);
 
 					var reg_span = document.createElement("span");
-					reg_sapn.setAttribute("class","btn-blue");
+					reg_span.setAttribute("class","btn-blue");
 					reg_btn.appendChild(reg_span);
 				}	
 			}
 			function click_regMail() {
 				var form = document.getElementById("regForm");
-				form.removeChild();
+			//	form.removeChild();
 				add_line("手机号","请输入手机号","regForm","id_phone");
 				add_line("设置密码","请输入密码","id_phone","id_password_in_phone");
 				add_line("确认密码","请再次输入密码","id_password_in_phone","id_passwordAgain_in_phone");
@@ -95,7 +95,7 @@
 					line.appendChild(reg_btn);
 
 					var reg_span = document.createElement("span");
-					reg_sapn.setAttribute("class","btn-blue");
+					reg_span.setAttribute("class","btn-blue");
 					reg_btn.appendChild(reg_span);
 
 				}
@@ -119,11 +119,11 @@
 				<div class="choice-way">
 					<div class="register-choice choice-phone">
 						<span class="register-img phone-img"></span>
-						<a class="phone-register-title" href="javascript:;" oclick="click_regPhong()">手机号注册</a>
+						<a class="phone-register-title" href="javascript:;" onclick="click_regPhone()">手机号注册</a>
 					</div>
 					<div class="register-choice choice-mail">
 						<span class="register-img mail-img"></span>
-						<a class="mail-regjster-title" href="javascript:;" onclick="click_regMail()">邮箱注册</a>
+						<a class="mail-regjster-title" href="javascript:;" onclick = "click_regMail()">邮箱注册</a>
 					</div>
 				</div>
 
