@@ -71,10 +71,7 @@
 					var reg_span = document.createElement("span");
 					reg_sapn.setAttribute("class","btn-blue");
 					reg_btn.appendChild(reg_span);
-
-				}
-			
-	
+				}	
 			}
 			function click_regMail() {
 				var form = document.getElementById("regForm");
@@ -102,7 +99,6 @@
 					reg_btn.appendChild(reg_span);
 
 				}
-			
 			}
 		</script>
 		<style type="text/css">
