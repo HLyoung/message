@@ -1,0 +1,130 @@
+
+
+	.whole-box{
+			-moz-box-sizing:border-box;
+			-webkit-box-sizeing: border-box;
+			box-sizing: border-box;
+			width: 740px;
+			margin-top: 164px;
+			margin-left: auto;
+			margin-right: auto;
+			min-height: calc(100vh - 64px);
+			background-color: white;
+			font-family: "Microsoft YaHei","微软雅黑","宋体",helvetica,"Hiragino Sans GB";
+		}
+		.title{
+			margin-top: 50px;
+			text-align: center;
+			}
+			
+		.choice-way{
+			width: 284px;
+			padding-top: 30px;
+			margin: 0 auto;
+		}
+		
+		.register-img{
+			display: block;
+			float: left;
+			height: 18px;
+			width: 18px;
+			background: url(/imag/wangyi.png) no-repeat;
+		}
+		.phone-img{
+			background-position: -20px -4px;
+		}
+		.mail-img{
+			background-position: -3px -23px;
+		}
+		.register-choice{
+			float: left;
+			font-size: 16px;
+		}
+		.choice-phone{
+			width: 173px;
+		}
+		.choice-mail{
+			width: 108px;
+		}
+		
+		.message-form{
+			padding-top: 30px;
+			margin: 0;
+			outline: none;
+		}
+		
+		.all-line{
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			margin-top: 20px;
+			font-size: 14px;
+			position: relative;
+		}
+		
+		.all-tang{
+			position: relative;
+			width: 350px;
+			height: 100%;
+			margin-left: 186px;
+			border: 1px solid #d8e1f0;
+			border-radius: 2px;
+			float: left;
+			padding-left: 16px;
+		}
+		
+		.u-lable{
+			float: left;
+			width: 105px;
+			color: #666;
+		}
+		
+		i{
+			display: inline-block;
+			margin-left: 6px;
+			height: 10px;
+			width: 8px;
+			background: url(/imag/wangyi.png) no-repeat;
+			background-position: -29px -70px;
+		}
+		
+		.i-split{
+			display: block;
+			position: absolute;
+			left: 	109px;
+			top: 17px;
+			height: 14px;
+			width: 1px;
+			background-color: #d8e1f0;
+		}
+		
+		input{
+			width: 205px;
+			padding: 12px 0 14px;
+			color: #333;
+			border: none;
+			font-size: 16px;
+			line-height: 20px;
+			background-color: #fcfdff;
+		}
+		
+		.register-btn{
+			height: 48px;
+			width: 100%;
+		}
+		
+		.btn-blue{
+			background-color: #4d92d6;
+			color: #ffff;
+			display: block;
+			float: left;
+			margin-left: 186px;
+			line-height: 50px;
+			text-align: center;
+			font-size: 18px;
+			cursor: pointer;
+			border-radius: 2px;
+			height: 48px;
+			width: 350px;
+		}
+	
