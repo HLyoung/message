@@ -28,6 +28,11 @@ public class jspController{
 	public String register(Model model){
 		return "/pages/register";
 	}
+
+	@RequestMapping("/reg")
+	public ModelAndView reg(user _user){
+		
+	}
 	
 }
 

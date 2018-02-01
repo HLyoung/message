@@ -29,23 +29,45 @@
 				document.getElementById("phone-in-mail-line").style.display = "block";
 			}
 
-			function checkInputById(id){
-				if($("#" + id).val() == ""){
-					$("#" + id).css("border","1px solid red");
-					return false;
-				}else{
-					return true;
-				}
-			}
-
 			function beforeSubmit() {
-				if(checkInputById("phone") && checkInputById("mail") && checkInputById("password") &&
-				   checkInputById("rePassword") && checkInputById("rePhone") && checkInputById("picCheck") &&
-				   checkInputById("messageCheck") && checkInputById("company")){
-					   return true;
-				   }else {
-					   return false;
-				   }				
+				var allComplete = 1;
+				if($("#phone").val() == ""){
+					$("#phone").css("border","1px solid red");
+					allComplete = 0;
+				}
+				if ($("#mail").val() == "") {
+					$("#mail").css("border", "1px solid red");
+					allComplete = 0;
+				}
+				if ($("#password").val() == "") {
+					$("#password").css("border", "1px solid red");
+					allComplete = 0;
+				}
+				if ($("#rePassword").val() == "") {
+					$("#rePassword").css("border", "1px solid red");
+					allComplete = 0;
+				}
+				if ($("#rePhone").val() == "") {
+					$("#rePhone").css("border", "1px solid red");
+					allComplete = 0;
+				}
+				if ($("#picCheck").val() == "") {
+					$("#picCheck").css("border", "1px solid red");
+					allComplete = 0;
+				}
+				if ($("#messageCheck").css("border", "1px solid red")) {
+					$("messageCheck").css("border", "1px solid red");
+					allComplete = 0;
+				}
+				if ($("#company").val() == "") {
+					$("#company").css("border", "1px solid red");
+					allComplete = 0;
+				}
+				if(allComplete){
+					return true;
+				}else{
+					return false;
+				}
 			}
 		</script>
 		<style type="text/css">
@@ -75,7 +97,7 @@
 				</div>
 
 				<div class="message-form">
-					<form action="" id="regForm" onsubmit="return beforeSubmit()">
+					<form action="./reg" id="regForm" onsubmit="return beforeSubmit()">
 
 						<div class="all-line" id="mail-line">
 							<div class="all-tang">
