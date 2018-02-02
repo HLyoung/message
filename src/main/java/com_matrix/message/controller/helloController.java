@@ -49,10 +49,4 @@ public class helloController {
         }
         return list;
     }
-    
-    @RequestMapping("/user")
-    public List<user> listUser(){
-    	logger.info("读取用户信息");
-    	return userservice.getList();
-    }
 }

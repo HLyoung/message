@@ -66,7 +66,7 @@
 				if(allComplete){
 					return true;
 				}else{
-					return false;
+					return true;
 				}
 			}
 		</script>
@@ -97,7 +97,7 @@
 				</div>
 
 				<div class="message-form">
-					<form action="./reg" id="regForm" onsubmit="return beforeSubmit()">
+					<form action="./regUser" id="regForm" onsubmit="return beforeSubmit()">
 
 						<div class="all-line" id="mail-line">
 							<div class="all-tang">
@@ -194,8 +194,8 @@
 						</div>
 
 						<div class="all-line">
-							<div class="register-btn" onclick="submit()">
-								<span class="btn-blue">注册</span>
+							<div class="register-btn">
+								<input type="submit" value="注册">
 							</div>
 						</div>
 					</form>

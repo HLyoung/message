@@ -1,18 +1,18 @@
 
 package com_matrix.message.service;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.List;
+import javax.annotation.Resource;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
 
-import com.fasterxml.jackson.core.format.InputAccessor.Std;
+import com.mysql.fabric.xmlrpc.base.Data;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
 import com_matrix.message.entity.user;
+import com_matrix.message.entity.userRepository;
 
 /**
  * user Service
@@ -21,21 +21,45 @@ import com_matrix.message.entity.user;
 @Service
 public class userService {
 
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
-
-    public List<user> getList(){
-        String sql = "SELECT name,password  FROM user";
-        return (List<user>) jdbcTemplate.query(sql, new RowMapper<user>(){
-
-            @Override
-            public user mapRow(ResultSet rs, int rowNum) throws SQLException {
-                user stu = new user();
-                stu.setName(rs.getString("name"));
-                stu.setPassword(rs.getString("password"));
-                return stu;
-            }
-
-        });
+    @Resource
+    userRepository userR;
+    
+    public boolean addUser(user _user){
+    	if(existsByPhone(_user.getPhone()))
+    		return false;
+    	
+    	Date now = new Date();
+    	SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    	_user.setRegTime(df.format(now));
+    	_user.setLastLoginTime(df.format(now));
+    	_user.setLogCount(1);
+        userR.save(_user);
+        return true;
+    }
+   
+    
+    public void deleteUserById(Long id){
+    	userR.delete(id);
+    }
+    
+    public void deleteAll(){
+    	userR.deleteAll();
+    }
+    
+    public boolean existsById(Long _id){
+    	return userR.exists(_id);
+    }
+    
+    public boolean existsByPhone(String phone){
+    	List<user> lUser = findAll();
+    	for(Iterator<user> lt = lUser.iterator(); lt.hasNext();){
+    		user u = lt.next();
+    		if(u.getPhone() != null && u.getPhone().equals(phone))
+    			return true;
+    	}
+    	return false;
+    }
+    public List<user> findAll(){
+    	return  (List<user>)userR.findAll();
     }
 }
