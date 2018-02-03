@@ -18,7 +18,7 @@
 				document.getElementsByClassName("mail-img")[0].style = "background-position:  -20px -23px";
 				document.getElementById("mail-line").style.display = "none";
 				document.getElementById("phone-line").style.display = "block";
-				document.getElementById("phone-in-mail-line").style.display = "none";
+				$("#checkCode").attr("placeholder","请输入短信验证码");
 			}
 
 			function click_regMail() {
@@ -26,7 +26,7 @@
 				document.getElementsByClassName("mail-img")[0].style = "background-position:  -3px -23px";
 				document.getElementById("mail-line").style.display = "block";
 				document.getElementById("phone-line").style.display = "none";
-				document.getElementById("phone-in-mail-line").style.display = "block";
+				$("#checkCode").attr("placeholder","请输入邮件验证码");
 			}
 
 			function beforeSubmit() {
@@ -69,9 +69,29 @@
 					return true;
 				}
 			}
+			
+			$(document).ready(function(){
+				$(".btn-getcheck").click(function(){
+					$(".btn-getcheck").attr("disabled",true);
+					var timer = setInterval(timeFun,1000);
+					var time  = 60;
+					function timeFun(){
+						time --;
+						if(time > 0){
+							$(".btn-getcheck").html(time + "s后重新发送");
+						}else{
+							$(".btn-getcheck").html("重新发送验证码");
+							$(".btn-getcheck").attr("diabled",false);
+							clearTimeout(timer);
+						}
+					}
+					$.post("getcheck",function(data,status){});
+				});
+			})
 		</script>
 		<style type="text/css">
 		</style>
+		</head>
 
 		<body style="text-align: cneter">
 			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -107,19 +127,19 @@
 									<span class="i-split">
 									</span>
 								</div>
-								<input id="mail" type="text" name="mailNum" placeholder="请输入邮箱">
+								<input id="mail" type="text" name="mail" placeholder="请输入邮箱">
 							</div>
 						</div>
 
 
-						<div class="all-line" id="phone-line">
+						<div class="all-line" id="phone-line" style="display:none">
 							<div class="all-tang">
 								<div class="u-lable">
 									<label for="">手机号</label>
 									<i></i>
 									<span class="i-split"> </span>
 								</div>
-								<input id="phone" type="text" name="phoneNum" placeholder="请输入手机号">
+								<input id="phone" type="text" name="phone" placeholder="请输入手机号" >
 							</div>
 						</div>
 
@@ -148,37 +168,16 @@
 							</div>
 						</div>
 
-						<div class="all-line" id="phone-in-mail-line">
-							<div class="all-tang">
-								<div class="u-lable">
-									<label for="">手机号</label>
-									<i></i>
-									<span class="i-split"> </span>
-								</div>
-								<input id="rePhone" type="text" name="rePhone" placeholder="请输入手机号">
-							</div>
-						</div>
-
 
 						<div class="all-line">
 							<div class="all-tang">
 								<div class="u-lable">
-									<label for="">图片验证码</label>
+									<label for="">验证码</label>
 									<i></i>
 									<span class="i-split"> </span>
 								</div>
-								<input id="picCheck" type="text" name="picCheckNum" placeholder="请输入图片验证码">
-							</div>
-						</div>
-
-						<div class="all-line">
-							<div class="all-tang">
-								<div class="u-lable">
-									<label for="">短信验证码</label>
-									<i></i>
-									<span class="i-split"> </span>
-								</div>
-								<input id="messageCheck" type="text" name="messageCheckNum" placeholder="请输入短信验证码">
+								<input id="checkCode" type="text" name="checkCode" placeholder="请输入邮件验证码">
+								<span class = "btn-getcheck" >获取验证码</span>
 							</div>
 						</div>
 
@@ -189,7 +188,7 @@
 									<i></i>
 									<span class="i-split"> </span>
 								</div>
-								<input id="company" type="text" name="companyName" placeholder="请输入公司或团队名称">
+								<input id="company" type="text" name="company" placeholder="请输入公司或团队名称">
 							</div>
 						</div>
 
@@ -202,6 +201,4 @@
 				</div>
 			</div>
 		</body>
-	</head>
-
 	</html>

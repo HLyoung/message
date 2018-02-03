@@ -24,8 +24,6 @@ public class helloController {
 
 	private final static Logger logger = LoggerFactory.getLogger(helloController.class);
 	
-	@Autowired
-	private userService userservice;
     @RequestMapping
     public String hello() {
         return "hello from springboot";
