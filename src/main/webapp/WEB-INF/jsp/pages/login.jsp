@@ -29,19 +29,17 @@
 
 			<div class = "lo-form-bg">
 				<form action = "login" id = "lo-form" class = "all-form">
-					<div class = "ac-bg" >
-						<div class = "ac-img"></div>
-						<input class = "ac" autocomplete = "off" placeholder="手机或邮箱">
-						<div class = "del"></div>
+					<div class = "bg ac-bg" >
+						<div class = "img ac-img"></div>
+						<input class = "in-line" type = "text" autocomplete = "off" placeholder="手机或邮箱">
 					</div>
 
-					<div class = "pw-bg">
-						<div class = "pw-img"></div>
-						<input class = "pw" autocomplete="off" placeholder="密码">
-						<div class = "del"></div>
+					<div class = "bg pw-bg">
+						<div class = "img pw-img"></div>
+						<input class = "in-line"  type = "text" autocomplete="off" placeholder="密码">
 					</div>
 
-					<input type = "button" value = "登录">
+					<input type = "button" class = "lg-btn" value = "登录">
 				</form>
 			</div>
 			

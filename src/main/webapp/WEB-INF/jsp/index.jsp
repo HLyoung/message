@@ -30,7 +30,7 @@
             <li><a href="#">解决方案</a></li>
             <li><a href="#">案例</a></li>
             <li><a href="#">价格</a></li>
-            <li><a href="#" class = "tobeMember btn-login">登陆</a></li>
+            <li><a target="_blank" href="login" class = "tobeMember btn-login">登陆</a></li>
             <li><a target="_blank" href="register" class = "active tobeMember btn-register">注册</a></li>
             
     
