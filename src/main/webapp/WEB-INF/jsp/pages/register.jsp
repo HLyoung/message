@@ -66,7 +66,8 @@
 				if(allComplete){
 					return true;
 				}else{
-					return false;
+					//alert("not complete");
+					return true;
 				}
 			}
 		</script>
@@ -194,8 +195,8 @@
 						</div>
 
 						<div class="all-line">
-							<div class="register-btn" onclick="submit()">
-								<span class="btn-blue">注册</span>
+							<div class="register-btn">
+								<input type="submit" class="btn-blue">注册</span>
 							</div>
 						</div>
 					</form>

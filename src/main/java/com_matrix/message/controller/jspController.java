@@ -30,8 +30,9 @@ public class jspController{
 	}
 
 	@RequestMapping("/reg")
-	public ModelAndView reg(user _user){
-		
+	public ModelAndView reg(){
+		System.out.printf("iam here");
+		return null;
 	}
 	
 }
