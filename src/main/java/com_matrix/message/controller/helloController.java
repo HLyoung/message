@@ -24,8 +24,6 @@ public class helloController {
 
 	private final static Logger logger = LoggerFactory.getLogger(helloController.class);
 	
-	@Autowired
-	private userService userservice;
     @RequestMapping
     public String hello() {
         return "hello from springboot";
@@ -48,11 +46,5 @@ public class helloController {
             list.add(map);
         }
         return list;
-    }
-    
-    @RequestMapping("/user")
-    public List<user> listUser(){
-    	logger.info("读取用户信息");
-    	return userservice.getList();
     }
 }
