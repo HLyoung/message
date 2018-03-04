@@ -43,9 +43,15 @@ public class jspController{
 		return "/pages/login";
 	}
 	
-	@RequestMapping("/getcheck")
-	public void getCheck(){
-		System.out.println("get check code");
+	@RequestMapping("useLogin")
+	public String useLogin(user _user){
+			return "/pages/left";
+	}
+	
+
+	@RequestMapping("/center")
+	public String useCenter(Model model){
+		return "/pages/center";
 	}
 	
 }

@@ -194,7 +194,7 @@
 
 						<div class="all-line">
 							<div class="register-btn">
-								<input type="submit" value="注册">
+								<input type="submit"  class = "reg-btn" value="注册" >
 							</div>
 						</div>
 					</form>

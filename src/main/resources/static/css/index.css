@@ -1,13 +1,13 @@
 		.p{
 			display:block;
-			mergin-top:1em;
-			mergin-buttom:1em;
-			mergin-right:0px;
-			mergin-left:0px;
+			margin-top:1em;
+			margin-bottom:1em;
+			margin-right:0px;
+			margin-left:0px;
 		}
 		.production{
 			position:relative;
-			min-with:1000px;
+			min-width:1000px;
 			zoom:1;
 		}
 		@media screen and (min-width:1000px){
@@ -20,10 +20,10 @@
 		}
 		@media screen and (min-width:600px) and (max-width:1000){
 			.productionBanner{
-				heigth:520px;
-				clolor:0xfff;
-				backgroud:url(/imag/banner1.jpg) no-repeat top fixed;
-				backgroud-size:100% auto;
+				height: 520px;
+				color: 0xfff;
+				background:url(/imag/banner1.jpg) no-repeat top fixed;
+				background-size:100% auto;
 			}
 		}
 		@media screen and (max-width:600px){
@@ -39,11 +39,11 @@
 		.name{
 			font-size:48px;
 			font-style:normal;
-			margin-button:12px;
-			font-weigth:300;
+			margin-bottom:12px;
+			font-weight:300;
 		}
 		.desc{
-			line-heigh:26px;
+			line-height:26px;
 			font-size:14px;
 			font-weight:400;
 			opacity:.8;
