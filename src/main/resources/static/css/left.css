@@ -9,7 +9,7 @@ div{
     padding:0;
 }
 .g-left{
-    top:64px;
+    top: 50px;
     bottom:0;
     width:164px;
     margin-right:-164px;
@@ -81,6 +81,14 @@ div{
     left: 0;
     font-size: 15px;
     line-height: 42px;
+}
+
+.navbar-nav{
+	float:right;
+}
+
+.navbar{
+	margin-bottom:0px;
 }
 
 html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {

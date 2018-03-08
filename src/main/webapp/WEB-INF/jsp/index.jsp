@@ -20,23 +20,23 @@
 
 <body style="overflow:scroll">	
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-	<div class="container-fluid">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="#">短信平台</a>
-    </div>
-    <div>
-        <ul class="nav navbar-nav"	>
-            <li><a href="#">产品</a></li>
-            <li><a href="#">解决方案</a></li>
-            <li><a href="#">案例</a></li>
-            <li><a href="#">价格</a></li>
-            <li><a target="_blank" href="login" class = "tobeMember btn-login">登陆</a></li>
-            <li><a target="_blank" href="register" class = "active tobeMember btn-register">注册</a></li>
-            
-    
-        </ul>
-    </div>
-	</div>
+		<div class="container-fluid">
+	    <div class="navbar-header">
+	        <a class="navbar-brand" href="#">短信平台</a>
+	    </div>
+	    <div>
+	        <ul class="nav navbar-nav">
+	            <li><a href="#">产品</a></li>
+	            <li><a href="#">解决方案</a></li>
+	            <li><a href="#">案例</a></li>
+	            <li><a href="#">价格</a></li>
+	            <li><a target="_blank" href="login" class = "tobeMember btn-login">登陆</a></li>
+	            <li><a target="_blank" href="register" class = "active tobeMember btn-register">注册</a></li>
+	            
+	    
+	        </ul>
+	    </div>
+		</div>
 	</nav>	
 	<div class = "production">
 		<div class="productionBanner">
