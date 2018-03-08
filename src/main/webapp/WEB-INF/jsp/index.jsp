@@ -25,7 +25,7 @@
         <a class="navbar-brand" href="#">短信平台</a>
     </div>
     <div>
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav"	>
             <li><a href="#">产品</a></li>
             <li><a href="#">解决方案</a></li>
             <li><a href="#">案例</a></li>
