@@ -1,0 +1,14 @@
+
+
+.overview{
+    padding: 80px 35px;
+}
+
+.item{
+    width: 29%;
+    background-color: #f7f8fc;
+    height: 168px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+}

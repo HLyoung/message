@@ -31,9 +31,7 @@
 	            <li><a href="#">案例</a></li>
 	            <li><a href="#">价格</a></li>
 	            <li><a target="_blank" href="login" class = "tobeMember btn-login">登陆</a></li>
-	            <li><a target="_blank" href="register" class = "active tobeMember btn-register">注册</a></li>
-	            
-	    
+	            <li><a target="_blank" href="register" class = "active tobeMember btn-register">注册</a></li>	            	    
 	        </ul>
 	    </div>
 		</div>
@@ -42,16 +40,22 @@
 		<div class="productionBanner">
 			<div class = "info">
 				<div class = "name">短信平台</div>
-				<div class = "desc">提供专业短信送达服务，包括验证码短信、通知短信、运营短信、覆盖三网，到达率高
-			    </div>
+				<div class = "desc">提供专业短信送达服务，包括验证码短信、通知短信、运营短信、覆盖三网，到达率高</div>
+				<div class = "c-use-btn-pre">
+					<a role="button" href="" class="c-use-btn">立即使用</a>
+				</div>
 			</div>
 		</div>
 	</div>
 	
+	<div class = "u-navigation">
+		<a href = "#" class = "c-link active">产品介绍</a>
+		<a href = "#" class = "c-link">产品优势</a>
+		<a href = "#" class = "c-link">产品价格</a>
+	</div>
 	<section class = "section sec-introduce">
-		<div class = "m-section div -introduce">
-			<h1 class="title">产品介绍</h1>
-			
+		<div class = "m-section div-introduce">
+			<h1 class="title">产品介绍</h1>	
 		</div>
 	</section>
 	<section class = "section sec-advantage">

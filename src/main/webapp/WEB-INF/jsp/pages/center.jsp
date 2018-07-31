@@ -9,7 +9,7 @@
         <meta name="renderer" content="webkit" />
 
         <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/css/left.css">
+        <link rel="stylesheet" type="text/css" href="/css/center.css">
 
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -24,7 +24,15 @@
 
     <body>
 
-     <p>通知</p>
+     <div class="overview">
+        <div class="left item">
+
+        </div>
+
+        <div class="right item">
+
+        </div>
+     </div>
      <p>余额 --> 充值</p>
      <p>短信数量 ---> 购买</p>
      <p>活动</p>
