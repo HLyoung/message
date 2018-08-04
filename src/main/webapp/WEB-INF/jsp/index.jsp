@@ -13,9 +13,26 @@
 	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	
 	<style type="text/css">
-			
 	</style>
-<title>Spring Boot Sample</title>
+	<title>Spring Boot Sample</title>
+	<script  type="text/javascript">
+	$(document).ready(function(){
+		$(".c-link").click(function(){
+			var tmpLink = this;
+			$(tmpLink).addClass("active");
+			$(".c-link").each(function(){
+				if($(this).hasClass("active") && this != tmpLink)
+				{
+					$(this).removeClass("avtive");
+				}
+				else
+				{
+					alert("the same");
+				}
+			})
+		});
+	});
+	</script>
 </head>
 
 <body style="overflow:scroll">	
@@ -49,10 +66,15 @@
 	</div>
 	
 	<div class = "u-navigation">
-		<a href = "#" class = "c-link active">产品介绍</a>
-		<a href = "#" class = "c-link">产品优势</a>
-		<a href = "#" class = "c-link">产品价格</a>
+		<div id = "subnav" class = "navigation">
+			<div class = "wrap g-hdc">
+				<a href = "#" class = "c-link active">产品介绍</a>
+				<a href = "#" class = "c-link">产品优势</a>
+				<a href = "#" class = "c-link">产品价格</a>
+			</div>
+		</div>
 	</div>
+	
 	<section class = "section sec-introduce">
 		<div class = "m-section div-introduce">
 			<h1 class="title">产品介绍</h1>	

@@ -47,8 +47,6 @@ public class jspController{
 	public String useLogin(user _user){
 			return "/pages/left";
 	}
-	
-
 	@RequestMapping("/center")
 	public String useCenter(Model model){
 		return "/pages/center";

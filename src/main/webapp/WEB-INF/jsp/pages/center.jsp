@@ -14,16 +14,13 @@
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-          
-        </script>
+        <script type="text/javascript"></script>
     </head>
     <style type="text/css">
        
     </style>
 
     <body>
-
      <div class="overview">
         <div class="left item">
 

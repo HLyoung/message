@@ -17,18 +17,14 @@ import javax.persistence.Table;
 @Table(name="send_task")
 
 public class sendTask implements Serializable{
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
-	
-	
 	
 	public enum sendCase{
 		YEAR("YEAR",1),MONTH("MONTH",2),DAY("DAY",3),HOUR("HOUR",4),MIN("MIN",5),SECOND("SECOND",6);
 		private String name;
 		private int index;
-		
+			
 		private sendCase(String _name,int _index){
 			this.name = _name;
 			this.index = _index;

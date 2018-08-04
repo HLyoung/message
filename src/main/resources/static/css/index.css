@@ -5,6 +5,18 @@
 			margin-right:0px;
 			margin-left:0px;
 		}
+		a
+		{
+			text-decoration: none;
+		}
+		a:link
+		{
+			text-decoration: none;
+		}
+		a:active
+		{
+			text-decoration: none;
+		}
 		.production{
 			position:relative;
 			min-width:1000px;
@@ -101,7 +113,7 @@
 		}
 		.sec-introduce
 		{
-			background-color: cornflowerblue;
+			background-color: #eff0f2;
 		}
 
 		.sec-advantage
@@ -178,16 +190,44 @@
 			width: 100%;
 			height: 60px;
 			text-align: center;
-			background: #eff0F2;
-			line-height: 
+		}
+		.navigation
+		{
+			z-index: 5;
+			position: absolute;
+			width: 100%;
+			height: 60;
+			background: #eff0f2;
+			box-sizing: border-box;
 		}
 
+		.wrap
+		{
+			display: inline-block;
+			width: 100%;
+			border-bottom: 1px solid #d6d6d6;
+		}
+
+		.g-hdc
+		{
+			position: relative;
+			height: 100%;
+			max-width: 1200px;
+			margin: 0 auto;	
+		}
 		.c-link
 		{
 			display: inline-block;
 			font-size: 14px;
-			width: 92px;
+			color: #0e1021;
+			width: 192px;
 			height: 59px;
+			line-height: 59px;
 			text-align: center;
 			font-weight: 400;
+		}
+		.active
+		{
+			color: #076bf2;
+			border-bottom: 2px solid #076df2
 		}
